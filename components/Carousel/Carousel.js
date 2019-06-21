@@ -1,8 +1,11 @@
 class Carousel {
-
 }
 
-let carousel = document.querySelector();
+let carousel = document.querySelectorAll(".carousel");
+console.log("carousel elements", carousel)
+
+// carousel.forEach((car) => {return new Carousel(car)})
+// console.log("carousel as instance of class Carousel", carousel); 
 
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
     1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
