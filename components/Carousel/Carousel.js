@@ -1,13 +1,20 @@
 class Carousel {
+    constructor(carouselElement, index) {
+        this.carouselElement = carouselElement; 
+        console.log("current carouselElement", this.carouselElement)
+
+        this.index = index; 
+        console.log("index of element", this.index)
+    }
 }
 
 let carousel = document.querySelectorAll(".carousel");
 console.log("carousel elements", carousel)
 
-// carousel.forEach((car) => {return new Carousel(car)})
-// console.log("carousel as instance of class Carousel", carousel); 
+carousel.forEach((car, index) => {return new Carousel(car, index)})
+console.log("carousel as instance of class Carousel", carousel); 
 
-/* If You've gotten this far, you're on your own! Although we will give you some hints:
+/*s If You've gotten this far, you're on your own! Although we will give you some hints:
     1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
     2. You will need to grab a reference to all of the images
     3. Create a current index
