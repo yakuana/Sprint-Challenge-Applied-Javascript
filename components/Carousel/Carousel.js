@@ -3,19 +3,19 @@ class Carousel {
 
         // assign this.carouselElement to the carouselElement DOM reference
         this.carouselElement = carouselElement; 
-        // console.log("current carouselElement", this.carouselElement)
+        // console.log("current carouselElement:", this.carouselElement)
 
         // get the left button 
         this.left = carouselElement.querySelector(".left-button"); 
-        // console.log("left button", this.left)
+        // console.log("left button:", this.left)
 
         // get the right button 
         this.right = carouselElement.querySelector(".right-button"); 
-        // console.log("right button", this.right)
+        // console.log("right button:", this.right)
 
         // get elements with class img from carouselElement
         this.images = carouselElement.querySelectorAll("img"); 
-        // console.log("list of images", this.images)
+        // console.log("list of images:", this.images)
 
         // first image to show is last item in the list of images (this.images)
         this.index = this.images.length - 1; 
